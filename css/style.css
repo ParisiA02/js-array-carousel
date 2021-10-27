@@ -32,14 +32,14 @@
 .title{
     font-size: 30px;
     position: absolute;
-    top: 300px;
+    bottom: 50px;
     left: 10px;
     display: none;
 }
 
 .text{
     position: absolute;
-    top: 330px;
+    bottom: 10px;
     left: 10px;
     display: none;
 }
@@ -72,10 +72,10 @@
 
 .prev-arrow{
     top: 0;
-    left: 55px;
+    left: 80px;
 }
 
 .next-arrow{
     bottom: 0;
-    left: 55px;
+    left: 80px;
 }
