@@ -61,6 +61,9 @@
 .active{
     display: block;
 }
+.active2{
+    border: 2px solid white;
+}
 
 .fas{
     font-size: 30px;

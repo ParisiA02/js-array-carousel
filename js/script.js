@@ -59,14 +59,19 @@ document.getElementsByClassName("title")[0].classList.add("active");
 document.getElementsByClassName("text")[0].classList.add("active");
 
 thumbCont.innerHTML += thumb;
-document.getElementsByClassName("thumb")[0].classList.add("active");
+document.getElementsByClassName("thumb")[0].classList.add("active2");
 
 let active = 0;
 
 document.querySelector(".next-arrow").addEventListener("click", function(){
 
-    active ++;
+    ++active;
+    console.log(active);
 
+    if (active === 5){
+        active = 0;
+    }
+        
     document.querySelector(".image.active").classList.remove("active");
     document.getElementsByClassName("image")[active].classList.add("active");
 
@@ -77,15 +82,22 @@ document.querySelector(".next-arrow").addEventListener("click", function(){
     document.getElementsByClassName("text")[active].classList.add("active");
 
 
-    document.querySelector(".thumb").classList.remove("active");
-    document.getElementsByClassName("thumb")[active].classList.add("active");
+    document.querySelector(".thumb.active2").classList.remove("active2");
+    document.getElementsByClassName("thumb")[active].classList.add("active2");
+        
     
+
 });
 
 
 document.querySelector(".prev-arrow").addEventListener("click", function(){
 
     active --;
+    console.log(active);
+
+    if (active === -1){
+        active = 4;
+    }
 
     document.querySelector(".image.active").classList.remove("active");
     document.getElementsByClassName("image")[active].classList.add("active");
@@ -97,7 +109,7 @@ document.querySelector(".prev-arrow").addEventListener("click", function(){
     document.getElementsByClassName("text")[active].classList.add("active");
 
 
-    document.querySelector(".thumb").classList.remove("active");
-    document.getElementsByClassName("thumb")[active].classList.add("active");
+    document.querySelector(".thumb.active2").classList.remove("active2");
+    document.getElementsByClassName("thumb")[active].classList.add("active2");
     
 });
