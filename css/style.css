@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 50%;
+    margin: 200px auto;
+}
+
+.img-container{
+    width: 80%;
+    /* debugging */
+    background-color: green;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumb-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    /* debugging */
+    background-color: orange;
+}
+
+.thumb > img{
+    width: 100%;
+    display: block;
+}
+
+.active{
+    display: block;
+}
+
+.fas{
+    font-size: 30px;
+    position: absolute;
+}
+
+.prev-arrow{
+    top: 0;
+    left: 55px;
+}
+
+.next-arrow{
+    bottom: 0;
+    left: 55px;
+}
