@@ -63,9 +63,10 @@ document.getElementsByClassName("thumb")[0].classList.add("active2");
 
 let active = 0;
 
-document.querySelector(".next-arrow").addEventListener("click", function(){
+let next = document.querySelector(".next");
+next.addEventListener("click", function(){
 
-    ++active;
+    active ++;
     console.log(active);
 
     if (active === 5){
@@ -89,8 +90,8 @@ document.querySelector(".next-arrow").addEventListener("click", function(){
 
 });
 
-
-document.querySelector(".prev-arrow").addEventListener("click", function(){
+let prev = document.querySelector(".prev");
+prev.addEventListener("click", function(){
 
     active --;
     console.log(active);

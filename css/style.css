@@ -13,8 +13,6 @@
 .img-container{
     width: 80%;
     position: relative;
-    /* debugging */
-    background-color: green;
 }
 
 .image{
@@ -35,6 +33,7 @@
     bottom: 50px;
     left: 10px;
     display: none;
+    color: white;
 }
 
 .text{
@@ -42,6 +41,7 @@
     bottom: 10px;
     left: 10px;
     display: none;
+    color: white;
 }
 
 .thumb-container{
@@ -49,8 +49,6 @@
     display: flex;
     flex-direction: column;
     width: 20%;
-    /* debugging */
-    background-color: orange;
 }
 
 .thumb > img{
